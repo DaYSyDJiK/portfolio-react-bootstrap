@@ -22,3 +22,11 @@ code {
 .link-hover:hover {
   color: rgba(255, 255, 255, 0.7);
 }
+
+.navbar .nav-link {
+  transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}

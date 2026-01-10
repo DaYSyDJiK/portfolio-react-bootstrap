@@ -12,11 +12,36 @@ export default function Header() {
 
         <div className="collapse navbar-collapse" id="nav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><NavLink className="nav-link" to="/">Accueil</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/services">Services</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/portfolio">Réalisations</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/mentions-legales">Mentions légales</NavLink></li>
+            <li className="nav-item"><NavLink
+              to="/"
+              className={({ isActive }) =>
+                "nav-link text-uppercase" +
+                (isActive ? " fw-bold text-decoration-underline" : "")
+              }>Accueil</NavLink></li>
+            <li className="nav-item"><NavLink
+              to="/services"
+              className={({ isActive }) =>
+                "nav-link text-uppercase" +
+                (isActive ? " fw-bold text-decoration-underline" : "")
+              }>Services</NavLink></li>
+            <li className="nav-item"><NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                "nav-link text-uppercase" +
+                (isActive ? " fw-bold text-decoration-underline" : "")
+              }>Réalisations</NavLink></li>
+            <li className="nav-item"><NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                "nav-link text-uppercase" +
+                (isActive ? " fw-bold text-decoration-underline" : "")
+              }>Contact</NavLink></li>
+            <li className="nav-item"><NavLink
+              to="/mentions-legales"
+              className={({ isActive }) =>
+                "nav-link text-uppercase" +
+                (isActive ? " fw-bold text-decoration-underline" : "")
+              }>Mentions légales</NavLink></li>
           </ul>
         </div>
       </div>
