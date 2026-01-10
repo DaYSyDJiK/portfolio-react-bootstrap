@@ -1,15 +1,25 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 
-function App() {
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Legal from "./pages/Legal";
+
+export default function App() {
   return (
-     <div className="container py-5">
-      <h1 className="mb-3">Bootstrap OK</h1>
-      <button className="btn btn-primary">
-        <i className="bi bi-github me-2"></i>
-        Bouton de test
-      </button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<Legal />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  
   );
 }
-
-export default App;
