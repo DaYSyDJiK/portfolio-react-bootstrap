@@ -41,3 +41,14 @@ code {
 .skills-wrapper {
   max-width: 600px;
 }
+
+.card {
+  transition: backgroud-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  
+}
