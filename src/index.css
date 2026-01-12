@@ -37,3 +37,7 @@ code {
   background-size: cover;
   background-position: center;
 }
+
+.skills-wrapper {
+  max-width: 600px;
+}
