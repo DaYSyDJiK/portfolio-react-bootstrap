@@ -27,6 +27,18 @@ code {
   transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
 }
 
+.footer-links a:hover {
+  font-weight: 600;
+}
+
+.footer-social {
+  transition: color 0.2s ease;
+}
+
+.footer-social:hover {
+  color: #fff !important;
+}
+
 .navbar .nav-link:hover {
   text-decoration: underline;
 }
@@ -43,7 +55,7 @@ code {
 }
 
 .card {
-  transition: backgroud-color 0.25s ease, box-shadow 0.25s ease;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
 }
 

@@ -6,7 +6,14 @@ export default function Header() {
       <div className="container">
         <NavLink className="navbar-brand" to="/">John Doe</NavLink>
 
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Ouvrir la navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
@@ -16,31 +23,31 @@ export default function Header() {
               to="/"
               className={({ isActive }) =>
                 "nav-link text-uppercase" +
-                (isActive ? " fw-bold text-decoration-underline" : "")
+                (isActive ? " fw-bold text-decoration-underline text-info" : "")
               }>Accueil</NavLink></li>
             <li className="nav-item"><NavLink
               to="/services"
               className={({ isActive }) =>
                 "nav-link text-uppercase" +
-                (isActive ? " fw-bold text-decoration-underline" : "")
+                (isActive ? " fw-bold text-decoration-underline text-info" : "")
               }>Services</NavLink></li>
             <li className="nav-item"><NavLink
               to="/portfolio"
               className={({ isActive }) =>
                 "nav-link text-uppercase" +
-                (isActive ? " fw-bold text-decoration-underline" : "")
+                (isActive ? " fw-bold text-decoration-underline text-info" : "")
               }>Réalisations</NavLink></li>
             <li className="nav-item"><NavLink
               to="/contact"
               className={({ isActive }) =>
                 "nav-link text-uppercase" +
-                (isActive ? " fw-bold text-decoration-underline" : "")
+                (isActive ? " fw-bold text-decoration-underline text-info" : "")
               }>Contact</NavLink></li>
             <li className="nav-item"><NavLink
               to="/mentions-legales"
               className={({ isActive }) =>
                 "nav-link text-uppercase" +
-                (isActive ? " fw-bold text-decoration-underline" : "")
+                (isActive ? " fw-bold text-decoration-underline text-info" : "")
               }>Mentions légales</NavLink></li>
           </ul>
         </div>

@@ -16,8 +16,8 @@ export default function Footer() {
 
             <div className="d-flex gap-3">
               <a
-                className="text-white"
-                href="https://github.com/"
+                className="text-secondary footer-social"
+                href="https://github.com/github-johndoe/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="GitHub"
@@ -26,7 +26,7 @@ export default function Footer() {
               </a>
 
               <a
-                className="text-white"
+                className="text-secondary footer-social"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -36,7 +36,7 @@ export default function Footer() {
               </a>
 
               <a
-                className="text-white"
+                className="text-secondary footer-social"
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -82,23 +82,46 @@ export default function Footer() {
           {/* Colonne 3 */}
           <div className="col-12 col-md-4">
             <h5 className="fw-semibold">Dernières réalisations</h5>
-            <ul className="list-unstyled mb-0 footer-links">
-              <li>
-                <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
-                  Projet 1
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
-                  Projet 2
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
-                  Projet 3
-                </NavLink>
-              </li>
-            </ul>
+            <div className="row g-4">
+              <div className="col-6">
+                <ul className="list-unstyled mb-0 footer-links">
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Site vitrine pour entreprise
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Plateforme e-commerce
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Application mobile UX
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-6">
+                <ul className="list-unstyled mb-0 footer-links">
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Dashboard de gestion
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Portfolio créatif
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Optimisation SEO
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
         </div>

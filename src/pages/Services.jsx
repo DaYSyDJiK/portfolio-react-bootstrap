@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="py-5">
+    <section className="p-5">
       <div className="container">
         <h1 className="mb-4">Services</h1>
         <div className="row">
