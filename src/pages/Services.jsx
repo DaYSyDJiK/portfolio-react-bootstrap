@@ -1,5 +1,6 @@
 import usePageMeta from "../hooks/usePageMeta";
 
+// Meta tags
 export default function Services() {
   usePageMeta({
     title: "Services — John Doe | Développement Web",

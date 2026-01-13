@@ -3,17 +3,18 @@ import usePageMeta from "../hooks/usePageMeta";
 
 export default function Home() {
 
-  // states
+  // States
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
+  // Meta tags
   usePageMeta({
     title: "John Doe — Développeur Web | Portfolio",
     description: "Portfolio de John Doe, développeur web. Projets, compétences, services et contact.",
   });
 
+  // Fetch GitHub user data
   useEffect(() => {
     const fetchUser = async () => {
       try {

@@ -25,7 +25,7 @@ export default function Legal() {
     };
   }, []);
 
-
+  // Accordéon Bootstrap pour les mentions légales
   return (
     <section className="py-5">
       <div className="container">
