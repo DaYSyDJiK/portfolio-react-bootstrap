@@ -1,4 +1,12 @@
+import usePageMeta from "../hooks/usePageMeta";
+
+
 export default function Contact() {
+  usePageMeta({
+    title: "Contact — John Doe | Me contacter",
+    description: "Contactez John Doe via le formulaire, par téléphone ou email. Adresse et localisation disponibles via Google Maps.",
+  });
+
   return (
 
     <section className="p-5">
@@ -31,7 +39,7 @@ export default function Contact() {
             </form>
           </div>
           <div className="col-12 col-lg-6">
-            <h4>Coordonnées</h4>
+            <h2 className="card-title h4">Coordonnées</h2>
             <p>Vous pouvez nous contacter par email à <a href="mailto:john.doe@gmail.com" className="text-decoration-none">john.doe@gmail.com</a></p>
             <p>ou par téléphone au <a href="tel:+33123456789" className="text-decoration-none">01 23 45 67 89</a></p>
             <p>Notre adresse postale est :

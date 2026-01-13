@@ -1,6 +1,14 @@
 import { useEffect } from "react";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function Legal() {
+  usePageMeta({
+    title: "Mentions légales — John Doe",
+    description: "Mentions légales du site de John Doe : éditeur, hébergeur et crédits des ressources (images et favicon).",
+  });
+
+
+
 
   // Pour ne pas indexer cette page
   useEffect(() => {
@@ -39,6 +47,7 @@ export default function Legal() {
             <div
               id="collapseOne"
               className="accordion-collapse collapse show"
+              role="region"
               aria-labelledby="headingOne"
               data-bs-parent="#legalAccordion"
             >
@@ -65,6 +74,7 @@ export default function Legal() {
             <div
               id="collapseTwo"
               className="accordion-collapse collapse"
+              role="region"
               aria-labelledby="headingTwo"
               data-bs-parent="#legalAccordion"
             >
@@ -94,16 +104,15 @@ export default function Legal() {
             <div
               id="collapseThree"
               className="accordion-collapse collapse"
+              role="region"
               aria-labelledby="headingThree"
               data-bs-parent="#legalAccordion"
             >
               <div className="accordion-body">
-                <a href="https://pixabay.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
-                  pixabay.com
-                </a>
-                <a href="https://flaticon.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
-                  flaticon.com
-                </a>
+                <p><a href="https://pixabay.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
+                  Pixabay</a></p>
+                <p><a href="https://flaticon.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
+                  Flaticon</a></p>
               </div>
             </div>
           </div>
