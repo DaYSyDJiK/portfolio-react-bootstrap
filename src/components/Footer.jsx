@@ -1,0 +1,131 @@
+import { NavLink } from "react-router-dom";
+
+
+export default function Footer() {
+  return (
+    <footer className="bg-dark text-white py-4 mt-auto">
+      <div className="container">
+        <div className="row gy-4">
+
+          {/* Colonne 1 */}
+          <div className="col-12 col-md-4">
+            <h3 className="fw-semibold h5">John Doe</h3>
+            <p className="mb-1">40 Rue de Bordeaux</p>
+            <p className="mb-1">33000 Bordeaux</p>
+            <p className="mb-3">06 00 00 00 00</p>
+
+            <div className="d-flex gap-3">
+              <a
+                className="text-secondary footer-social"
+                href="https://github.com/github-johndoe/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i className="bi bi-github fs-4"></i>
+              </a>
+
+              <a
+                className="text-secondary footer-social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <i className="bi bi-twitter fs-4"></i>
+              </a>
+
+              <a
+                className="text-secondary footer-social"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i className="bi bi-linkedin fs-4"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Colonne 2 */}
+          <div className="col-12 col-md-4">
+            <h3 className="fw-semibold h5">Navigation</h3>
+            <ul className="list-unstyled mb-0 footer-links">
+              <li>
+                <NavLink to="/" className="footer-link text-white text-decoration-none link-hover">
+                  Accueil
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/services" className="footer-link text-white text-decoration-none link-hover">
+                  Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                  Réalisations
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" className="footer-link text-white text-decoration-none link-hover">
+                  Contact
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/mentions-legales" className="footer-link text-white text-decoration-none link-hover">
+                  Mentions légales
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          {/* Colonne 3 */}
+          <div className="col-12 col-md-4">
+            <h3 className="fw-semibold h5">Dernières réalisations</h3>
+            <div className="row g-4">
+              <div className="col-6">
+                <ul className="list-unstyled mb-0 footer-links">
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Site vitrine pour entreprise
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Plateforme e-commerce
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Application mobile UX
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-6">
+                <ul className="list-unstyled mb-0 footer-links">
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Dashboard de gestion
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Portfolio créatif
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/portfolio" className="footer-link text-white text-decoration-none link-hover">
+                      Optimisation SEO
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  );
+}
