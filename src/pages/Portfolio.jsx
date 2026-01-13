@@ -1,6 +1,6 @@
 import usePageMeta from "../hooks/usePageMeta";
 
-
+// Meta tags
 export default function Portfolio() {
   usePageMeta({
     title: "Réalisations — John Doe | Projets",

@@ -1,6 +1,6 @@
 import usePageMeta from "../hooks/usePageMeta";
 
-
+// Meta tags
 export default function Contact() {
   usePageMeta({
     title: "Contact — John Doe | Me contacter",
