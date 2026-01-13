@@ -1,4 +1,5 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import usePageMeta from "../hooks/usePageMeta";
 
 export default function Home() {
 
@@ -6,6 +7,12 @@ export default function Home() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+
+  usePageMeta({
+    title: "John Doe — Développeur Web | Portfolio",
+    description: "Portfolio de John Doe, développeur web. Projets, compétences, services et contact.",
+  });
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -107,7 +114,7 @@ export default function Home() {
           <div className="modal-content">
 
             <div className="modal-header">
-              <h5 className="modal-title">Profil GitHub</h5>
+              <h3 className="modal-title">Profil GitHub</h3>
               <button className="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
 
@@ -117,7 +124,7 @@ export default function Home() {
               {user && (
                 <div className="text-center">
                   <img src={user.avatar_url} alt={user.login} className="img-fluid rounded-circle mb-3" width="100" />
-                  <h6>{user.name ?? user.login}</h6>
+                  <h4>{user.name ?? user.login}</h4>
                   {user.name && (
                     <p className="text-muted mb-2">@{user.login}</p>
                   )}

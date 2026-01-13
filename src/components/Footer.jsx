@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Colonne 1 */}
           <div className="col-12 col-md-4">
-            <h5 className="fw-semibold">John Doe</h5>
+            <h3 className="fw-semibold h5">John Doe</h3>
             <p className="mb-1">40 Rue de Bordeaux</p>
             <p className="mb-1">33000 Bordeaux</p>
             <p className="mb-3">06 00 00 00 00</p>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Colonne 2 */}
           <div className="col-12 col-md-4">
-            <h5 className="fw-semibold">Navigation</h5>
+            <h3 className="fw-semibold h5">Navigation</h3>
             <ul className="list-unstyled mb-0 footer-links">
               <li>
                 <NavLink to="/" className="footer-link text-white text-decoration-none link-hover">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Colonne 3 */}
           <div className="col-12 col-md-4">
-            <h5 className="fw-semibold">Dernières réalisations</h5>
+            <h3 className="fw-semibold h5">Dernières réalisations</h3>
             <div className="row g-4">
               <div className="col-6">
                 <ul className="list-unstyled mb-0 footer-links">

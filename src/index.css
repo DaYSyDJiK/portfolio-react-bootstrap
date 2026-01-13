@@ -43,13 +43,6 @@ code {
   text-decoration: underline;
 }
 
-.hero {
-  min-height: 100vh;
-  background-image: url("../public/images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .skills-wrapper {
   max-width: 600px;
 }
@@ -57,6 +50,10 @@ code {
 .card {
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
+}
+
+.card-title {
+  font-weight: 600;
 }
 
 .card .btn {
