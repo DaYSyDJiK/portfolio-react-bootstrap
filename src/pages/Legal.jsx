@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function Legal() {
 
   // Pour ne pas indexer cette page
-  useEffect (() => {
+  useEffect(() => {
     let meta = document.querySelector('meta[name="robots"]');
     if (!meta) {
       meta = document.createElement('meta');
@@ -16,7 +16,7 @@ export default function Legal() {
       meta.setAttribute("content", "index, follow");
     };
   }, []);
-  
+
 
   return (
     <section className="py-5">
@@ -98,8 +98,12 @@ export default function Legal() {
               data-bs-parent="#legalAccordion"
             >
               <div className="accordion-body">
-                <p>Images :  <a href="https://pixabay.com" className="text-decoration-none">pixabay.com</a></p>
-                <p>Favicon :  <a href="https://flaticon.com" className="text-decoration-none">flaticon.com</a></p>
+                <a href="https://pixabay.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
+                  pixabay.com
+                </a>
+                <a href="https://flaticon.com" target="_blank" rel="nofollow noopener noreferrer" className="text-decoration-none">
+                  flaticon.com
+                </a>
               </div>
             </div>
           </div>
